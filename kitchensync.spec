@@ -7,6 +7,7 @@ License:	GPLv2+
 Url:		http://kde-apps.org/content/show.php/KitchenSync?content=132898
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		kitchensync-0.22.0-includes.patch
+Patch1:		kitchensync-0.22.0-dso.patch
 BuildRequires:	kdepimlibs4-devel
 BuildRequires:	pkgconfig(opensync-1.0)
 BuildRequires:	pkgconfig(osengine-1.0)
@@ -25,6 +26,7 @@ Authors: Tobias Koenig - Cornelius Schumacher
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %cmake_kde4
