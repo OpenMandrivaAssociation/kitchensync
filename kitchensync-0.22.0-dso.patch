@@ -1,0 +1,12 @@
+diff -urN kitchensync-0.22.0/src/CMakeLists.txt kitchensync-0.22.0-patched/src/CMakeLists.txt
+--- kitchensync-0.22.0/src/CMakeLists.txt	2010-09-22 03:38:55.000000000 +1100
++++ kitchensync-0.22.0-patched/src/CMakeLists.txt	2012-03-11 15:08:33.066933031 +1100
+@@ -12,7 +12,7 @@
+ 
+ KDE4_ADD_EXECUTABLE(kitchensync ${kitchensync_SRCS})
+ 
+-TARGET_LINK_LIBRARIES(kitchensync kitchensyncprivate ${KDE_KDEUI_LIBS} )
++TARGET_LINK_LIBRARIES(kitchensync kitchensyncprivate ${KDE_KDEUI_LIBS} -lkdeui -lQtGui -lkdecore -lQtCore)
+ 
+ INSTALL(TARGETS kitchensync ${INSTALL_TARGETS_DEFAULT_ARGS})
+ 
