@@ -1,6 +1,6 @@
 Name:		kitchensync
 Version:	0.22.0
-Release:	%mkrel 1
+Release:	2
 Summary:	KDE4 OpenSync frontend
 Group:		Graphical desktop/KDE
 License:	GPLv2+
@@ -11,7 +11,6 @@ Patch1:		kitchensync-0.22.0-dso.patch
 BuildRequires:	kdepimlibs4-devel
 BuildRequires:	pkgconfig(opensync-1.0)
 BuildRequires:	pkgconfig(osengine-1.0)
-Requires:	libopensync-plugin-kdepim
 Requires:	libopensync-plugin-akonadi
 
 %description
@@ -33,11 +32,7 @@ Authors: Tobias Koenig - Cornelius Schumacher
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall_std -C build
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc README LICENSE
