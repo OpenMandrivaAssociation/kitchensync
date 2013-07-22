@@ -6,7 +6,7 @@ diff -urN kitchensync-0.22.0/CMakeLists.txt kitchensync-0.22.0-patched/CMakeList
  find_package(Opensync REQUIRED)
  
 -include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${QT_QTCORE_INCLUDE_DIR}
-+include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${QT_QTCORE_INCLUDE_DIR} ${QT_INCLUDE_DIR}
++include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_INCLUDE_DIR}
                       ${OPENSYNC_INCLUDE_DIRS} ${OSENGINE_INCLUDE_DIRS} )
  
  ADD_SUBDIRECTORY( libqopensync ) 
