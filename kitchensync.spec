@@ -5,7 +5,7 @@
 Summary:	KDE4 OpenSync frontend
 Name:		kitchensync
 Version:	0.22.0
-Release:	3
+Release:	4
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://kde-apps.org/content/show.php/KitchenSync?content=132898
