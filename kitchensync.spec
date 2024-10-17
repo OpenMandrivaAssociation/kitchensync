@@ -8,7 +8,7 @@ Version:	0.22.0
 Release:	4
 Group:		Graphical desktop/KDE
 License:	GPLv2+
-Url:		http://kde-apps.org/content/show.php/KitchenSync?content=132898
+Url:		https://kde-apps.org/content/show.php/KitchenSync?content=132898
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		kitchensync-0.22.0-includes.patch
 Patch1:		kitchensync-0.22.0-dso.patch
